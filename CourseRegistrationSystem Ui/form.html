@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="max-w-md mx-auto p-6">
+        <h1 class="text-4xl font-serif text-center">Registration Form</h1>
+
+        <form action="http://localhost:8080/courses/register" class=" flex flex-col space-y-2 items-center  mt-20 " method="post">
+
+            
+            <div  class="flex items-center space-x-2  ">
+                <label for="nam" class="w-32  text-left">Name</label>
+                <input class="border w-64 rounded flex-1 focus:outline-none focus:ring focus:ring-green-300 h-8 "  type="text" id="name" name="name"> <br>
+            </div>
+
+            <div  class="flex items-center space-x-2  ">
+                <label for="email" class="w-32  text-left">Email</label>
+                <input class="border w-64 rounded flex-1 focus:outline-none focus:ring focus:ring-green-300 h-8 "  type="email" id="name" name="emailId"> <br>
+            </div>
+ 
+           <div  class="flex items-center space-x-2  ">
+            <label for="courseName" class="w-32 text-left">Choose Course</label>
+            <select name="courseName" class="border w-64 rounded flex-1  h-8  focus:outline-none focus:ring focus:ring-green-300 " id="">
+                <option value="Java Essentials">Java Essentials</option>
+                <option value="Spring Ai">Spring Ai</option>
+                <option value="React">React</option>
+            </select>
+           </div>
+
+           <div class="">
+
+               <button type="submit" class="border-1 cursor-pointer bg-linear-to-t from-lime-100 to-emerald-400 p-2 ">Submit</button>
+           </div>
+        </form>
+
+        
+
+
+    </div>
+
+
+</body>
+</html>
