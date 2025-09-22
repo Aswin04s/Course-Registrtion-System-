@@ -1,37 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WinTech | Course Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="Assets/logo.png" type="image/png">
 </head>
-<body class="relative">
 
-<div class="absolute blur-lg z-0 bg-cover bg-center h-screen w-screen bg-linear-to-bl from-blue-200 via-red-200 to-blue-200  inset-0"></div>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-700">
 
-    <div class="relative text-center mt-10 z-20 ">
-        <h1 class="text-4xl bold font-serif">Welcome to WinTech</h1>
-        
-        <div class="mt-5 space-x-3 ">
-
-            <a href="availcourses.html"><button
-                class="bg-green-300 hover:bg-green-400 p-4 cursor-pointer border-2 border-green-600 hover:-mt-3 transition hover:scale-110  ease-in-out duration-300 shadow-lg "
-                >Available Courses</button></a>
-            
-
-                <a href="regstudents.html"><button
-                    class="bg-green-300 hover:bg-green-400 p-4 cursor-pointer border-2 border-green-600 hover:-mt-3 transition hover:scale-110  ease-in-out duration-300 shadow-lg "
-                    >Registered Students</button></a>
-            
-            <a href="form.html"><button
-                class="bg-green-300 hover:bg-green-400 p-4 cursor-pointer border-2 border-green-600 hover:-mt-3 transition hover:scale-110  ease-in-out duration-300 shadow-lg "
-                >Register</button>
-</a>
-        </div>
+    <div class="rounded-3xl shadow-2xl bg-white/95 backdrop-blur-lg p-0 sm:p-0 max-w-3xl w-full">
+        <nav class="flex justify-between px-10 pt-7 pb-5 border-b border-slate-200 mb-5">
+            <a class="text-2xl font-black text-indigo-800 tracking-wide" href="index.html">WinTech</a>
+            <div class="flex gap-4">
+                <a href="availcourses.html"
+                    class="px-5 py-2 rounded-lg font-semibold text-indigo-700 hover:bg-indigo-100 transition">Courses</a>
+                <a href="regstudents.html"
+                    class="px-5 py-2 rounded-lg font-semibold text-indigo-700 hover:bg-indigo-100 transition">Students</a>
+                <a href="form.html"
+                    class="px-5 py-2 rounded-lg font-semibold text-white bg-indigo-600 hover:bg-indigo-800 transition">Register</a>
+            </div>
+        </nav>
+        <main class="px-10 pb-10 pt-2 flex flex-col items-center">
+            <h1 class="text-4xl font-extrabold mb-5 text-slate-800">🚀 Jumpstart Your Learning</h1>
+            <p class="text-xl text-slate-600 mb-8 text-center">Join a thriving tech community. Browse our live courses
+                or register as a new student to start your journey.</p>
+            <div class="flex gap-6">
+                <a href="availcourses.html"
+                    class="rounded-xl px-8 py-4 font-bold text-lg bg-indigo-600 text-white shadow-md hover:-translate-y-1 hover:scale-105 transition">Browse
+                    Courses</a>
+                <a href="form.html"
+                    class="rounded-xl px-8 py-4 font-bold text-lg bg-slate-900 text-white shadow-md hover:bg-indigo-700 hover:scale-105 transition">Join
+                    Now</a>
+            </div>
+        </main>
     </div>
-
-
 </body>
+
 </html>

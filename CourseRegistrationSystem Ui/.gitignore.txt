@@ -1,3 +1,10 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js if using any build tools (optional)
 node_modules/
-build/
-.env
+
+# IDE/editor files (optional)
+.vscode/
+.idea/
